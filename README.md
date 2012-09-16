@@ -7,7 +7,7 @@ contents.
 
 The Balisage proceedings are published at
 
-    http://www.balisage.net/Proceedings/
+    http://balisage.net/Proceedings/
 
 The script `fetch-tocs.sh` can be used to retrieve all the available
 table of contents.

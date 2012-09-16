@@ -3,7 +3,7 @@
 mkdir -p "balisage"
 
 for num in `seq 1 20` ; do
-	toc="http://www.balisage.net/Proceedings/vol${num}/contents.html"
+	toc="http://balisage.net/Proceedings/vol${num}/contents.html"
 	html="balisage/balisage-vol${num}.html"
 	wget -c ${toc} -O $html
 
