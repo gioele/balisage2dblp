@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# This is free software released into the public domain (CC0 license).
+
 mkdir -p "balisage"
 
 for num in `seq 1 20` ; do
