@@ -11,6 +11,16 @@
 	<xsl:variable name="eol" xml:space="preserve">&#10;</xsl:variable>
 	<xsl:variable name="space" xml:space="preserve">&#32;</xsl:variable>
 
+	<xsl:variable name="long-title">
+		<xsl:value-of select="normalize-space((//h:p[@class='title'])[1])"/>
+	</xsl:variable>
+
+	<xsl:variable name="symposium-title">
+		<xsl:if test="contains($long-title, 'Symposium')">
+			<xsl:text>symposium</xsl:text>
+		</xsl:if>
+	</xsl:variable>
+
 	<xsl:variable name="conf-place">
 		<xsl:value-of select="//h:p[@class='notice' and starts-with(., 'Montr')]"/>
 	</xsl:variable>
@@ -42,6 +52,7 @@
 
 	<xsl:template name="publication-id">
 		<xsl:text>conf/balisage/balisage</xsl:text>
+		<xsl:value-of select="$symposium-title"/>
 		<xsl:value-of select="$year"/>
 		<xsl:value-of select="$eol"/>
 	</xsl:template>
@@ -50,7 +61,7 @@
 		<!-- editors -->
 
 		<!-- volume name -->
-		<xsl:value-of select="normalize-space((//h:p[@class='title'])[1])"/>
+		<xsl:value-of select="$long-title"/>
 		<xsl:text>, </xsl:text>
 		<xsl:value-of select="$conf-place"/>
 		<xsl:text>, </xsl:text>
