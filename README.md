@@ -12,10 +12,8 @@ The Balisage proceedings are published at
 The script `fetch-tocs.sh` can be used to retrieve all the available
 table of contents.
 
-The generated files are compatible with the DBLP input format
-specifications. [^1]
-
-[^1]: http://www.informatik.uni-trier.de/~ley/db/about/faqformat.html
+The generated files are compatible with the [DBLP input format
+specifications](http://www.informatik.uni-trier.de/~ley/db/about/faqformat.html).
 
 
 Authors
