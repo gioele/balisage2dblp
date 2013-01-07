@@ -17,13 +17,13 @@ specifications](http://www.informatik.uni-trier.de/~ley/db/about/faqformat.html)
 
 
 Authors
-=======
+-------
 
 * Gioele Barabucci <http://svario.it/gioele>
 
 
 Licence
-=======
+-------
 
 This is free software released into the public domain (CC0 license).
 
